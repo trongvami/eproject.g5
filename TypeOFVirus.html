@@ -643,6 +643,7 @@
 
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
+    localStorage.clear();
 
     function myFunction() {
         if (video.paused) {
@@ -678,7 +679,7 @@
     }
     
     $('#VR01').click(function () {
-        var url = '_LayoutVirusDetail.html';
+        var url = 'LayoutVirusDetail.html';
         var getIDVR = "VR01";
         localStorage.setItem("storageName",getIDVR);
         url = url + "?id=" + getIDVR;
@@ -686,7 +687,7 @@
     });
     
     $('#VR02').click(function () {
-        var url = '_LayoutVirusDetail.html';
+        var url = 'LayoutVirusDetail.html';
         var getIDVR = "VR02";
         localStorage.setItem("storageName",getIDVR);
         url = url + "?id=" + getIDVR;
